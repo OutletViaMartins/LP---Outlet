@@ -1,0 +1,111 @@
+:root{
+    --corfonte: #094067;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    height: 100vh;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+}
+
+.logo{
+    height: 10rem;
+    border: solid;
+    border-color: #094067;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.titulo{
+    font-size: 1.7rem;
+}
+
+.endereco{
+    display: flex;
+    gap: 0.4rem;
+    color: #3a6685;
+    font-weight: bold;
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+    width: 100%;
+    color: var(--corfonte);
+}
+
+.beneficios{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.socials i{
+    color: var(--corfonte);
+    font-size: 1.5rem;
+}
+
+.cta{
+    font-size: 2rem;
+}
+
+.botao-whats{
+    display: flex;
+    align-items: center;
+    background-color: #1986da;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.botao-whats i{
+    font-size: 2.5rem;
+}
+
+.botao-whats .texto{
+    position: relative;
+    right: 1.1rem;
+    flex: 1;
+    text-align: center;
+}
+
+.botao-whats .texto span{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 900px){
+    .container{
+        width: 80%;
+    }   
+}
